@@ -1,5 +1,5 @@
-import Banner from './components/Banner/Banner';
-import TextField from './components/TextField/TextField';
+import Banner from './components/Banner';
+import TextField from './components/TextField';
 
 function App() {
   return (
