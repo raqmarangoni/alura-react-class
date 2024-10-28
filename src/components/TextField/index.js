@@ -1,6 +1,8 @@
+import "./TextField.css"
+
 const TextField = () => {
     return (
-        <div>
+        <div className="text-field">
             <label>Nome</label>
             <input />
         </div>
