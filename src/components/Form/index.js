@@ -15,14 +15,19 @@ const Form = () => {
         "Inovação e Gestão"
     ]
     
+    const onSave = (event) => { 
+        event.preventDefault() 
+        console.log("Form foi submetido") 
+    }
+
     return (
         <section className="formContainer">
-            <form>
+            <form onSubmit={onSave}>
                 <h2>Preencha os dados para criar o card do colaborador.</h2>
-                <TextField label="Nome" placeholder="Digite seu nome" />
-                <TextField label="Cargo" placeholder="Digite seu cargo" />
+                <TextField required={true} label="Nome" placeholder="Digite seu nome" />
+                <TextField required={true} label="Cargo" placeholder="Digite seu cargo" />
                 <TextField label="Imagem" placeholder="Digite o endereço da imagem" />
-                <DropDownList label="Time" items={teams} />
+                <DropDownList required={true} label="Time" items={teams} />
                 <Button text="Criar Card"/>
             </form>
         </section>
