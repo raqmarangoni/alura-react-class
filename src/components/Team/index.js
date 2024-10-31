@@ -1,6 +1,8 @@
+import "./Team.css"
+
 const Team = (props) => {
     return (
-        <section>
+        <section className="team">
             <h3>{props.name}</h3>
         </section>
     )
