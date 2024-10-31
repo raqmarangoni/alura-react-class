@@ -4,7 +4,7 @@ import DropDownList from "../DropDownList"
 import Button from "../Button"
 import { useState } from "react"
 
-const Form = () => {
+const Form = (props) => {
 
     const teams = [
         "Programação",
@@ -21,7 +21,12 @@ const Form = () => {
     const [team, setTeam] = useState('')
     const onSave = (event) => {
         event.preventDefault()
-        console.log("Form foi submetido => ", name, position, image)
+        props.onRegisteredCollaborator({
+            name: name,
+            position: position,
+            image: image,
+            team: team
+        })
     }
 
     return (
