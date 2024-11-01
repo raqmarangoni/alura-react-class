@@ -58,6 +58,7 @@ function App() {
           name={team.name}
           primaryColor={team.primaryColor}
           secondaryColor={team.secondaryColor}
+          collaborators={collaborators}
           />)}
     </div>
   );
