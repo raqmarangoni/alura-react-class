@@ -7,7 +7,7 @@ const Team = (props) => {
     const borderColor = { borderColor: props.primaryColor }
 
     return (
-        <section className="team" style={backgroundColor}>
+        (props.collaborators.length > 0) ? <section className="team" style={backgroundColor}>
             <h3 style={borderColor}>{props.name}</h3>
             <div className="collaborators">
                 {props.collaborators.map(collaborator =>
@@ -19,6 +19,7 @@ const Team = (props) => {
                     />)}
             </div>
         </section>
+        : ""
     )
 }
 
