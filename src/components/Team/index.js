@@ -12,7 +12,7 @@ const Team = (props) => {
             <div className="collaborators">
                 {props.collaborators.map(collaborator =>
                     <Collaborator
-                        key={collaborator.nome}
+                        key={collaborator.name}
                         name={collaborator.name}
                         position={collaborator.position}
                         image={collaborator.image}
