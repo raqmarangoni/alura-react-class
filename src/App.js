@@ -45,7 +45,7 @@ function App() {
 
   const [collaborators, setCollaborators] = useState([])
   const onAddCollaborator = (collaborator) => {
-    setCollaborators([...collaborators, collaborator]) //agora temos um novo array, espalhamos os colaboradores antigos e adicionando um novo colaborador no final
+    setCollaborators([...collaborators, collaborator])
   }
 
   return (
@@ -58,7 +58,7 @@ function App() {
           name={team.name}
           primaryColor={team.primaryColor}
           secondaryColor={team.secondaryColor}
-          collaborators={collaborators}
+          collaborators={collaborators.filter(collaborator => collaborator.team === team.name)}
           />)}
     </div>
   );
