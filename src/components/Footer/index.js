@@ -27,7 +27,7 @@ const Footer = () => {
             </section>
             <section>
                 <p>
-                    Desenvolvido por Alura.
+                    Desenvolvido por Raquel Marangoni.
                 </p>
             </section>
         </footer>
